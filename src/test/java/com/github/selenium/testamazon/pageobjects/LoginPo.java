@@ -75,6 +75,35 @@ public class LoginPo {
         return element;
     }
 
+    //Methods to identify the country list btn
+    public static WebElement countryListBtn(WebDriver driver) throws NoSuchElementException
+    {
+        try {
+            element = driver.findElement(By.id("icp-touch-link-country"));
+        }
+        catch (NoSuchElementException e)
+        {
+         System.out.println("Element from 'countryListBtn' is not matching"+e.toString());
+         throw(e);
+        }
+        return element;
+    }
+
+    public static WebElement cancelOnCountryBtn(WebDriver driver)
+    {
+        element = driver.findElement(By.cssSelector("[class=\'a-button a-spacing-top-mini\']"));
+        element = element.findElement(By.tagName("button"));
+        return element;
+    }
+
+    public static WebElement listElm(WebDriver driver)
+    {
+        element = driver.findElement(By.id("nav-link-accountList"));
+        return element;
+    }
+
+
+
 
 //    public static WebElement getMatchingElm(WebDriver driver)
 //    {

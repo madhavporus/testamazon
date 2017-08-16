@@ -39,5 +39,28 @@ public class Helpers {
         builder.moveToElement(element).build().perform();
     }
 
+    public static WebElement getMatchingElm(WebDriver driver, WebElement element)
+    {
+        //System.out.println("N*******************************************:");
+        //element = driver.findElement(By.id("nav-link-accountList")); // Getting the parent element of the Tag ‘span’
+
+        List<WebElement> elements = element.findElements(By.tagName("span")); // Using the parent, getting all Tags of ‘Span’
+        for(WebElement el: elements){
+            System.out.println("Names***:"+el.getText());
+            if (el.getText().contains("Your Watchlist")){
+                System.out.println("Yes Text Exist*******************************************:");
+                element = el;
+            } else
+            {
+                System.out.println("No Text Does not Exist*******************************************:");
+            }
+        }
+
+        return element;
+
+    }
+
+
+
 
 }

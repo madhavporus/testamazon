@@ -2,6 +2,7 @@ package com.github.selenium.testamazon.tests;
 
 import com.github.selenium.testamazon.components.Helpers;
 import com.github.selenium.testamazon.pageobjects.LoginPo;
+import com.github.selenium.testamazon.pageobjects.Watchlist;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -66,7 +67,17 @@ public class RegressionTests {
 
     }
 
-
+    @Test
+    public void testCreateWatchList()
+    {
+        Helpers.mouseOver(driver, Watchlist.youWatchListLnk(driver));
+        Helpers.getMatchingElm(driver,Watchlist.parentOfWatchListElm(driver)).click();
+        LoginPo.loginID(driver).sendKeys("ninjaqa1@gmail.com");
+        LoginPo.loginPwd(driver).sendKeys("doublehelix123");
+        LoginPo.loginBtn(driver).click();
+        //Watchlist.youWatchListLnk(driver).click();
+        //// MMMMMMMMMMMMMMMMMMM Update as on 16 AUG 2017 at 3.14PM
+    }
 
 //     @AfterSuite
 //     public void rampDown()

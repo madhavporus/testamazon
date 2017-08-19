@@ -21,4 +21,11 @@ public class Watchlist {
         element = driver.findElement(By.id("nav-al-your-account"));
         return element;
     }
+
+    public static WebElement emptyWatchListElm(WebDriver driver)
+    {
+        element = driver.findElement(By.cssSelector(".dv-cl-empty"));
+        return element;
+    }
+
 }

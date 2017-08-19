@@ -12,6 +12,8 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -24,7 +26,13 @@ import com.github.selenium.testamazon.pageobjects.*;
 public class Helpers {
     //public static WebDriver driver;
 
+    public static void openAppInBrowser(WebDriver driver, String appUrl)
+    {
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        driver.get(appUrl);
+        driver.manage().window().maximize();
 
+    }
     public static boolean verifyTextPresent(WebDriver driver, String txt) {
         Boolean trueFalse;
         trueFalse = driver.getPageSource().contains(txt);
@@ -39,24 +47,24 @@ public class Helpers {
         builder.moveToElement(element).build().perform();
     }
 
-    public static WebElement getMatchingElm(WebDriver driver, WebElement element)
+    public static WebElement getMatchingElmByTag(WebDriver driver, WebElement parentElement, String elementsTagName, String elementName )
     {
         //System.out.println("N*******************************************:");
         //element = driver.findElement(By.id("nav-link-accountList")); // Getting the parent element of the Tag ‘span’
 
-        List<WebElement> elements = element.findElements(By.tagName("span")); // Using the parent, getting all Tags of ‘Span’
+        List<WebElement> elements = parentElement.findElements(By.tagName(elementsTagName)); // Using the parent, getting all Tags of ‘Span’
         for(WebElement el: elements){
             System.out.println("Names***:"+el.getText());
-            if (el.getText().contains("Your Watchlist")){
+            if (el.getText().contains(elementName)){
                 System.out.println("Yes Text Exist*******************************************:");
-                element = el;
+                parentElement = el;
             } else
             {
                 System.out.println("No Text Does not Exist*******************************************:");
             }
         }
 
-        return element;
+        return parentElement;
 
     }
 

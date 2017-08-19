@@ -36,7 +36,8 @@ public class RegressionTests {
         //WebElement watchListElm = null;
         Helpers.mouseOver(driver, Watchlist.youWatchListLnk(driver));
         Helpers.getMatchingElmByTag(driver,Watchlist.parentOfWatchListElm(driver),tagName,listItemName).click();
-
+        Assert.assertEquals(Watchlist.emptyWatchListElm(driver).getText(),"Your Watchlist is currently empty");
+        //System.out.println("THE XD IS:"+xd);
     }
 
 

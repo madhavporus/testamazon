@@ -3,14 +3,9 @@
     <test name="E2E Test">
         <classes>
             <class name="com.github.selenium.testamazon.tests.RegressionTests"/>
+        </classes>
+    </test>
 
-        </classes>
-    </test>
-    <test name="Test2">
-        <classes>
-            <class name="com.github.selenium.testamazon.tests.SmokeTests" />
-        </classes>
-    </test>
 </suite>
 
 

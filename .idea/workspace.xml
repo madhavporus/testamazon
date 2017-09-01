@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab0d0fdb-3833-4fe7-8760-cd201674d80c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/components/Helpers.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/components/Helpers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/CreateListPo.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/CreateListPo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/HomePo.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/HomePo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/LoginPo.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/LoginPo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/Watchlist.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/pageobjects/Watchlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/tests/RegressionTests.class" afterPath="$PROJECT_DIR$/target/test-classes/com/github/selenium/testamazon/tests/RegressionTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/Helpers.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/Helpers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/RealTimeCustomReports.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/RealTimeCustomReports.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testamazon.iml" afterPath="$PROJECT_DIR$/testamazon.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,8 +92,8 @@
           <file leaf-file-name="RegressionTests.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -191,8 +180,8 @@
         <option value="$PROJECT_DIR$/target/test-classes/testNg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/RealTimeCustomReports.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/components/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/rough.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java" />
       </list>
     </option>
   </component>
@@ -988,6 +977,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1001,7 +991,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58457714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32708934" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3034826" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2885572" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27038628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1535,8 +1525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/selenium/testamazon/tests/RegressionTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

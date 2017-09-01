@@ -54,13 +54,13 @@ public class Helpers {
 
         List<WebElement> elements = parentElement.findElements(By.tagName(elementsTagName)); // Using the parent, getting all Tags of ‘Span’
         for(WebElement el: elements){
-            System.out.println("Names***:"+el.getText());
+            //System.out.println("Names***:"+el.getText());
             if (el.getText().contains(elementName)){
-                System.out.println("Yes Text Exist*******************************************:");
+                //System.out.println("Yes Text Exist*******************************************:");
                 parentElement = el;
             } else
             {
-                System.out.println("No Text Does not Exist*******************************************:");
+                //System.out.println("No Text Does not Exist*******************************************:");
             }
         }
 

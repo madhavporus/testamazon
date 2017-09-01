@@ -1,6 +1,6 @@
 package com.github.selenium.testamazon.tests;
-
 import com.github.selenium.testamazon.components.Helpers;
+import com.github.selenium.testamazon.components.RealTimeCustomReports;
 import com.github.selenium.testamazon.pageobjects.LoginPo;
 import com.github.selenium.testamazon.pageobjects.Watchlist;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +8,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+// MADHAVAAAAAÆ ĀŠ
+// From DeskTop
+
 /**
  * Created by madhavareddy on 7/28/17.
  */
+
+
+@Listeners (RealTimeCustomReports.class)
+
 public class RegressionTests {
     public static WebDriver driver;
 
@@ -25,7 +32,7 @@ public class RegressionTests {
     // To verify the amazon site ligin function.
     public void testLoginPage() {
           LoginPo.loginAmazon(driver,"ninjaqa1@gmail.com","doublehelix123");
-          Assert.assertEquals(true, driver.getPageSource().contains("madhavq"));
+          Assert.assertEquals(true, driver.getPageSource().contains("madhavqX"));
     }
 
     @Test (priority = 1)

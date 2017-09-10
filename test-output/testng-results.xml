@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="6525" started-at="2017-09-01T19:56:57Z" finished-at="2017-09-01T19:57:04Z">
+  <suite name="Default Suite" duration-ms="9069" started-at="2017-09-01T20:26:33Z" finished-at="2017-09-01T20:26:42Z">
     <groups>
     </groups>
-    <test name="testamazon" duration-ms="6525" started-at="2017-09-01T19:56:57Z" finished-at="2017-09-01T19:57:04Z">
+    <test name="testamazon" duration-ms="9069" started-at="2017-09-01T20:26:33Z" finished-at="2017-09-01T20:26:42Z">
       <class name="com.github.selenium.testamazon.tests.RegressionTests">
-        <test-method status="PASS" signature="rampUp()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@5594a1b5]" name="rampUp" is-config="true" duration-ms="5499" started-at="2017-09-01T12:56:52Z" finished-at="2017-09-01T12:56:57Z">
+        <test-method status="PASS" signature="rampUp()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="rampUp" is-config="true" duration-ms="5697" started-at="2017-09-01T13:26:27Z" finished-at="2017-09-01T13:26:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rampUp -->
-        <test-method status="FAIL" signature="testLoginPage()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@5594a1b5]" name="testLoginPage" duration-ms="4965" started-at="2017-09-01T12:56:57Z" finished-at="2017-09-01T12:57:02Z">
+        <test-method status="FAIL" signature="testLoginPage()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="testLoginPage" duration-ms="7182" started-at="2017-09-01T13:26:33Z" finished-at="2017-09-01T13:26:40Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="testCreateWatchList()[pri:1, instance:com.github.selenium.testamazon.tests.RegressionTests@5594a1b5]" name="testCreateWatchList" duration-ms="1537" started-at="2017-09-01T12:57:02Z" finished-at="2017-09-01T12:57:04Z">
+        <test-method status="PASS" signature="testCreateWatchList()[pri:1, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="testCreateWatchList" duration-ms="1865" started-at="2017-09-01T13:26:40Z" finished-at="2017-09-01T13:26:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateWatchList -->

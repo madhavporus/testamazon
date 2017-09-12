@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_Suite">
-              <span class="suite-name border-failed">Default Suite</span>
+              <span class="suite-name border-passed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
-                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.github.selenium.testamazon.tests.RegressionTests" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.github.selenium.testamazon.tests.RegressionTests" hash-for-method="testCreateWatchList">testCreateWatchList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.github.selenium.testamazon.tests.RegressionTests" hash-for-method="testLoginPage">testLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -131,25 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
-          <div class="suite-Default_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.github.selenium.testamazon.tests.RegressionTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginPage">
-                  </a> <!-- testLoginPage -->
-                  <span class="method-name">testLoginPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.github.selenium.testamazon.tests.RegressionTests.testLoginPage(RegressionTests.java:34)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_Suite-class-failed -->
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,6 +133,13 @@
                   <a name="testCreateWatchList">
                   </a> <!-- testCreateWatchList -->
                   <span class="method-name">testCreateWatchList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPage">
+                  </a> <!-- testLoginPage -->
+                  <span class="method-name">testLoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,16 +200,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLoginPage')
 data.setCell(0, 2, 'com.github.selenium.testamazon.tests.RegressionTests')
-data.setCell(0, 3, 7182);
+data.setCell(0, 3, 5985);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCreateWatchList')
 data.setCell(1, 2, 'com.github.selenium.testamazon.tests.RegressionTests')
-data.setCell(1, 3, 1865);
+data.setCell(1, 3, 1670);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -262,14 +241,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testLoginPage</span>
-                <span class="method-start">5712 ms</span>
+                <span class="method-start">5338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateWatchList</span>
-                <span class="method-start">12900 ms</span>
+                <span class="method-start">11325 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

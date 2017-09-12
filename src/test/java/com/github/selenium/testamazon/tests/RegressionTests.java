@@ -33,7 +33,7 @@ public class RegressionTests {
     // To verify the amazon site ligin function.
     public void testLoginPage() {
           LoginPo.loginAmazon(driver,"ninjaqa1@gmail.com","doublehelix123");
-          Assert.assertEquals(true, driver.getPageSource().contains("madhavqX"));
+          Assert.assertEquals(true, driver.getPageSource().contains("madhavq"));
     }
 
     @Test (priority = 1)

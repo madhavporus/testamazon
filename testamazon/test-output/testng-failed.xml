@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="testamazon(failed)">
+    <classes>
+      <class name="com.github.selenium.testamazon.tests.RegressionTests">
+        <methods>
+          <include name="testLoginPage"/>
+          <include name="rampUp"/>
+        </methods>
+      </class> <!-- com.github.selenium.testamazon.tests.RegressionTests -->
+    </classes>
+  </test> <!-- testamazon(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

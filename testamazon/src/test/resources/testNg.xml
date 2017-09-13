@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test1" parallel="false">
+    <test name="E2E Test">
+        <classes>
+            <class name="com.github.selenium.testamazon.tests.RegressionTests"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+

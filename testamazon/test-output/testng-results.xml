@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="7666" started-at="2017-09-01T23:24:14Z" finished-at="2017-09-01T23:24:21Z">
+    <groups>
+    </groups>
+    <test name="testamazon" duration-ms="7666" started-at="2017-09-01T23:24:14Z" finished-at="2017-09-01T23:24:21Z">
+      <class name="com.github.selenium.testamazon.tests.RegressionTests">
+        <test-method status="PASS" signature="rampUp()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="rampUp" is-config="true" duration-ms="5329" started-at="2017-09-01T16:24:08Z" finished-at="2017-09-01T16:24:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rampUp -->
+        <test-method status="PASS" signature="testLoginPage()[pri:0, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="testLoginPage" duration-ms="5985" started-at="2017-09-01T16:24:14Z" finished-at="2017-09-01T16:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method status="PASS" signature="testCreateWatchList()[pri:1, instance:com.github.selenium.testamazon.tests.RegressionTests@1cd072a9]" name="testCreateWatchList" duration-ms="1670" started-at="2017-09-01T16:24:20Z" finished-at="2017-09-01T16:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateWatchList -->
+      </class> <!-- com.github.selenium.testamazon.tests.RegressionTests -->
+    </test> <!-- testamazon -->
+  </suite> <!-- Default Suite -->
+</testng-results>

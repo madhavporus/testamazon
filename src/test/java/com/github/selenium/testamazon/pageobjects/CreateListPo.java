@@ -2,6 +2,7 @@ package com.github.selenium.testamazon.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 /**
@@ -10,11 +11,11 @@ import org.openqa.selenium.WebElement;
 public class CreateListPo {
    public static WebElement element = null;
 
-   public static WebElement accountsListsElm() throws NoSuchElementException
+   public static WebElement accountsListsElm(WebDriver driver) throws NoSuchElementException
    {
        try
        {
-           element.findElement(By.id("nav-link-accountList"));
+           element = driver.findElement(By.id("nav-link-accountList"));
        }
        catch (NoSuchElementException e)
        {
@@ -24,4 +25,29 @@ public class CreateListPo {
        return element;
    }
 
+   public static WebElement createListElm(WebDriver driver) throws NoSuchElementException
+   {
+     try
+     {
+       By by = By.xpath("//span[text()='Create a List']");
+       element = driver.findElement(by);
+     }
+     catch(NoSuchElementException err)
+     {
+        System.out.println("Element with name Create a List is not found:"+ err.toString());
+     }
+     return element;
+   }
+
+   public static WebElement onCreateListPopUpWishListElm(WebDriver driver) throws NoSuchElementException
+   {
+     try
+     {
+       var elements = driver.findElements(By.cssSelector(".type-radio-contents"));
+
+     } catch (NoSuchElementException err)
+     {
+
+     }
+   }
 }

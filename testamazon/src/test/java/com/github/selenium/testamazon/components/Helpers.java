@@ -39,6 +39,8 @@ public class Helpers {
         return trueFalse;
         //*[@id="a-popover-content-3"]/div/div[1]/div/label/span
     }
+
+    // Below helper method is to perform a mouse over action.
     public static void mouseOver(WebDriver driver, WebElement element)
     {
         Actions builder = new Actions(driver);

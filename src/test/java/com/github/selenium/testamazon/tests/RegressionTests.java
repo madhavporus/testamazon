@@ -3,6 +3,7 @@ import com.github.selenium.testamazon.components.Helpers;
 import com.github.selenium.testamazon.components.RealTimeCustomReports;
 import com.github.selenium.testamazon.pageobjects.LoginPo;
 import com.github.selenium.testamazon.pageobjects.Watchlist;
+import com.github.selenium.testamazon.pageobjects.CreateListPo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -48,7 +49,15 @@ public class RegressionTests {
         //System.out.println("THE XD IS:"+xd);
     }
 
+    @Test (priority = 2)
+    public void testCreateList()
+    {
+      Helpers.mouseOver(driver, CreateListPo.accountsListsElm(driver));
+      CreateListPo.createListElm(driver).click();
 
+    }
+
+}
 
 
 //     @AfterSuite
@@ -56,7 +65,7 @@ public class RegressionTests {
 //     {
 //     driver.quit();
 //     }
-}
+
 
 //------------------------------------------
 // Will improve the below 2 tests later

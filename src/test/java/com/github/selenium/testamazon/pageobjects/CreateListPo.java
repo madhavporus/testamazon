@@ -47,16 +47,13 @@ public class CreateListPo {
    public static WebElement onCreateListPopUpWishListElm(WebDriver driver, String listType) throws NoSuchElementException
    //public static void onCreateListPopUpWishListElm(WebDriver driver) throws NoSuchElementException
    {
-       String str,x;
-       x = "abc";
-
+     String str;
      try
      {
        List<WebElement> elements = driver.findElements(By.cssSelector(".type-radio-contents"));
        Iterator<WebElement> itr = elements.iterator();
        while (itr.hasNext())
        {
-
            element = itr.next();
            str = element.getText();
            if (str.equalsIgnoreCase(listType))
@@ -72,4 +69,24 @@ public class CreateListPo {
      }
        return element;
    }
-}
+
+   public static WebElement listNameOnCreateLitPopUpElm(WebDriver driver)
+   {
+     element = driver.findElement(By.id("create-name-il"));
+     return element;
+   }
+
+   public static WebElement createListBtnOnCreateListPopUpElm(WebDriver driver)
+   {
+     String stri;
+     List<WebElement> elements = driver.findElements(By.cssSelector(".a-button-text"));
+     Iterator<WebElement> itr = elements.iterator();
+     while (itr.hasNext())
+     {
+       element = itr.next();
+       stri = element.getText();
+      // To do...
+     }
+   }
+
+} // Class ends

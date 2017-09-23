@@ -52,6 +52,8 @@ public class RegressionTests {
       Helpers.mouseOver(driver, CreateListPo.accountsListsElm(driver));
       CreateListPo.createListElm(driver).click();
       CreateListPo.onCreateListPopUpWishListElm(driver, listType).click();
+      CreateListPo.listNameOnCreateLitPopUpElm(driver).sendKeys("Thank Giving shopping list -ma");
+
     }
 
 }

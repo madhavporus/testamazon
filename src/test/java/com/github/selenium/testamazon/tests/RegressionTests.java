@@ -9,10 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-// MADHAVAAAAAÆ ĀŠ
-// From DeskTop
-// From Laptop on 09/12/2017
-
 /**
  * Created by madhavareddy on 7/28/17.
  */
@@ -22,7 +18,8 @@ import org.testng.annotations.*;
 
 public class RegressionTests {
     public static WebDriver driver;
-
+    //public String listType = "Wish List";
+    public String listType = "Idea List";
     //@BeforeClass
     @BeforeSuite
     public void rampUp() {
@@ -54,10 +51,11 @@ public class RegressionTests {
     {
       Helpers.mouseOver(driver, CreateListPo.accountsListsElm(driver));
       CreateListPo.createListElm(driver).click();
-
+      CreateListPo.onCreateListPopUpWishListElm(driver, listType).click();
     }
 
 }
+
 
 
 //     @AfterSuite

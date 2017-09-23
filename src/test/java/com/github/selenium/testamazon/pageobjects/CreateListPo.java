@@ -5,6 +5,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * Created by madhavareddy on 8/4/17.
  */
@@ -39,15 +42,34 @@ public class CreateListPo {
      return element;
    }
 
-   public static WebElement onCreateListPopUpWishListElm(WebDriver driver) throws NoSuchElementException
+   // Below method is to find a specific element from the list of elements having the same attributes like class name etc.
+   // but with a different text in it. Actual Outer HTML: <h3 class="type-radio-contents">Wish List</h3>
+   public static WebElement onCreateListPopUpWishListElm(WebDriver driver, String listType) throws NoSuchElementException
+   //public static void onCreateListPopUpWishListElm(WebDriver driver) throws NoSuchElementException
    {
+       String str,x;
+       x = "abc";
+
      try
      {
-       var elements = driver.findElements(By.cssSelector(".type-radio-contents"));
+       List<WebElement> elements = driver.findElements(By.cssSelector(".type-radio-contents"));
+       Iterator<WebElement> itr = elements.iterator();
+       while (itr.hasNext())
+       {
+
+           element = itr.next();
+           str = element.getText();
+           if (str.equalsIgnoreCase(listType))
+           {
+               System.out.println("THE STRING IS:::"+ str);
+               break;  // When there is a match found, control exits here. hence the 'element'
+           }
+       }
 
      } catch (NoSuchElementException err)
      {
-
+        System.out.println("No element matched:"+ err.toString());
      }
+       return element;
    }
 }

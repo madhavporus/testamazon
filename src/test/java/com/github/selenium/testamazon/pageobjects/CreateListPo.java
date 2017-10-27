@@ -78,15 +78,15 @@ public class CreateListPo {
 
    public static WebElement createListBtnOnCreateListPopUpElm(WebDriver driver)
    {
-     String stri;
-     List<WebElement> elements = driver.findElements(By.cssSelector(".a-button-text"));
-     Iterator<WebElement> itr = elements.iterator();
-     while (itr.hasNext())
-     {
-       element = itr.next();
-       stri = element.getText();
-      // To do...
-     }
+       // Below one is by xpath. which is easy. just copied from chrome dev tools
+      /* element = driver.findElement(By.xpath("//*[@id=\"a-popover-content-1\"]/form/div[2]/span[3]/span/span/input"));
+       return element;*/
+
+      //Below is by cssSelector.
+       element = driver.findElement(By.cssSelector(".a-form-actions>.a-declarative:nth-child(3) input"));
+       return element;
+
+
    }
 
 } // Class ends
